@@ -7,8 +7,8 @@ namespace MyProject
         static void Main(string[] args)
         {
             int[] numbers = { 1, 2, 3, 4, 5 };
-            int max = FindMaxValue(numbers);
-            Console.WriteLine("Maximum value: " + max);
+            int xam = FindMaxValue(numbers);
+            Console.WriteLine("Maximum value: " + xam);
         }
 
         static int FindMaxValue(int[] arr)
@@ -16,13 +16,13 @@ namespace MyProject
             if (arr == null || arr.Length == 0)
                 throw new ArgumentException("Array must not be empty");
 
-            int max = arr[0];
+            int xam = arr[0];
             for (int i = 1; i < arr.Length; i++)
             {
-                if (arr[i] > max)
-                    max = arr[i];
+                if (arr[i] > xam)
+                    xam = arr[i];
             }
-            return max;
+            return xam;
         }
     }
 }
